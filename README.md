@@ -1,15 +1,17 @@
 # Midi technique - Vue.js
 
-Ce dépôt contient les [slides](https://github.com/fdelbrayelle/midi-tech-vuejs/blob/master/slides) et la [démo](https://github.com/fdelbrayelle/midi-tech-vuejs/blob/master/demo) du midi technique effectué le jeudi 6 mai 2019 chez Gfi Informatique.
+Ce dépôt contient les [slides](https://github.com/fdelbrayelle/midi-tech-vuejs/blob/master/slides) et la [démo](https://github.com/fdelbrayelle/midi-tech-vuejs/blob/master/demo) du midi technique effectué le jeudi 6 juin 2019 chez Gfi Informatique.
 
 Le sujet est centré sur le framework JavaScript Vue.js qui permet de créer des applications front. Après une courte présentation des caractéristiques du framework et une rapide comparaison avec ses principaux concurrents (Angular et React), une démo a été effectuée pour créer un nouveau projet simple via Vue CLI et montrer les possibilités du framework.
+
+En complément, le blueprint JHipster permettant de générer des applications full-stack complète avec Vue.js a été également présenté.
 
 Les supports peuvent être librement modifiés et réutilisés. Les slides ont également été [exportés au format PDF](https://github.com/fdelbrayelle/midi-tech-vuejs/blob/master/slides/presentation.pdf).
 
 ## Étapes de la démo
 
 - Supprimer le dossier si existant : `rm -rf demo`
-- Vérifier la version de Vue CLI : `vue --version`
+- Vérifier la version de Vue CLI : `vue --version`. L'installer si besoin avec `npm install -g @vue/cli`
 - Créer un projet avec Vue CLI, s'y déplacer et l'ouvrir avec VS Code (ou tout autre IDE) : `vue create demo` puis `cd demo` et `code . &`
 - Présenter l'extension Vetur de VS Code (scaffold, coloration syntaxique...)
 - Lancer l'application en mode développement avec `cd src && vue serve App.vue` puis `gio open http://localhost:8080`
