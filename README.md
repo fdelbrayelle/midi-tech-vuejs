@@ -1,5 +1,7 @@
 # Midi technique - Vue.js
 
+![Vue.js](https://github.com/fdelbrayelle/midi-tech-vuejs/blob/master/slides/src/images/vuejs.png)
+
 Ce dépôt contient les [slides](https://github.com/fdelbrayelle/midi-tech-vuejs/blob/master/slides) et la [démo](https://github.com/fdelbrayelle/midi-tech-vuejs/blob/master/demo) du midi technique effectué le jeudi 6 juin 2019 chez Gfi Informatique.
 
 Le sujet est centré sur le framework JavaScript Vue.js qui permet de créer des applications front. Après une courte présentation des caractéristiques du framework et une rapide comparaison avec ses principaux concurrents (Angular et React), une démo a été effectuée pour créer un nouveau projet simple via Vue CLI et montrer les possibilités du framework.
