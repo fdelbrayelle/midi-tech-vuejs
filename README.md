@@ -28,6 +28,7 @@ Les supports peuvent être librement modifiés et réutilisés. Les slides ont �
 - Tester les évènements et les méthodes en ajoutant `<button v-on:click="reverseMessage">Retourner le message</button>>` et une méthode `reverseMessage: function () { this.message = this.message.split('').reverse().join('') }`
 - Créer un nouveau composant déclaré globalement avec `Vue.component('foo', Foo);` dans le `main.js`
 - Créer un nouveau composant, déclaré localement (import/export classique)
+- Ajouter une `props` à ce composant et lui fournir une valeur via le composant parent avec `v-bind:prop-name="prop-value"`
 - Créer un nouveau composant contenant un `<slot></slot>`, l'utiliser puis montrer le contenu par défaut, montrer les slots nommés (avec `<slot name="nom">` et `<template v-slot:nom>`)
 - Mettre les `<b-card style="max-width: 20rem;">` dans un `<b-card-group deck>`
 - Boucler pour afficher une liste de personnes dans les b-cards avec `v-for` et `v-bind:key` sur le composant
