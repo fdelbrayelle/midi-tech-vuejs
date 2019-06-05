@@ -115,7 +115,7 @@ export default class Presentation extends React.Component {
             <ListItem margin="60px 0 0">En inclusion directe <Code>script</Code></ListItem>
             <ListItem margin="30px 0 0">Avec <Code>npm install vue</Code> : Webpack...</ListItem>
             <ListItem margin="30px 0 0">Avec Vue CLI (cli.vuejs.org) : <Code>npm install -g @vue/cli</Code></ListItem>
-            <ListItem margin="30px 0 0">Avec NuxtJS (nuxtjs.org) : comprend Vue Router et Babel</ListItem>
+            <ListItem margin="30px 0 0">Avec NuxtJS (nuxtjs.org) : comprend Vue Router, Babel, SSR...</ListItem>
             <ListItem margin="30px 0 0">Avec le blueprint JHipster : <Code>npm install -g generator-jhipster-vuejs</Code> puis <Code>jhipster --blueprint vuejs</Code></ListItem>
           </List>
         </Slide>
@@ -127,13 +127,12 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={['fade']} bgColor="primary" textColor="secondary">
           <Heading size={3} textColor="tertiary" caps>
-            Objet Vue
+            Composants
           </Heading>
           <List>
-            <ListItem margin="60px 0 0">Est l'objet principal et racine</ListItem>
-            <ListItem margin="30px 0 0">Est un ViewModel</ListItem>
-            <ListItem margin="30px 0 0">Synchronise Model (objets JS) et Vue (DOM)</ListItem>
-            <ListItem margin="30px 0 0">S'instancie avec <Code>new Vue(...)</Code></ListItem>
+            <Image margin="60px 200px" src={images.components}></Image>
+            <ListItem margin="30px 0 0">Composant racine = s'instancie avec <Code>new Vue(&#123; el: '#app' &#125;)</Code> souvent dans un <Code>main.js</Code> ou un <Code>main.ts</Code></ListItem>
+            <ListItem margin="30px 0 0">Chaque composant est une instance de Vue et donc un ViewModel qui synchronise Model (objets JS) et Vue (DOM)</ListItem>
           </List>
         </Slide>
         <Slide transition={['fade']} bgColor="primary" textColor="secondary">
@@ -184,7 +183,6 @@ export default class Presentation extends React.Component {
             Déclarations des composants
           </Heading>
           <List>
-            <Image margin="60px 200px" src={images.components}></Image>
             <ListItem margin="30px 0 0">Globalement (avant new Vue) : <Code>Vue.component('my-component-name', &#123; /* ... */ &#125;)</Code></ListItem>
             <ListItem margin="30px 0 0">Localement avec <Code>import</Code> et <Code>export default</Code> (ES2015 - https://babeljs.io/docs/en/learn#modules)</ListItem>
           </List>
@@ -194,6 +192,18 @@ export default class Presentation extends React.Component {
             Composants monofichier
           </Heading>
           <Image margin="50px 225px 0" src={images.monofichier}></Image>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="secondary">
+          <Heading size={3} textColor="tertiary" caps>
+            Bonnes pratiques
+          </Heading>
+          <List>
+            <ListItem margin="30px 0 0">Utiliser les méthodes et computed</ListItem>
+            <ListItem margin="30px 0 0">Éviter les composants "fourre-tout"</ListItem>
+            <ListItem margin="30px 0 0">Utiliser les slots (déléguer l'affichage au composant parent)</ListItem>
+            <ListItem margin="30px 0 0">Tendre vers les renderless components : https://adamwathan.me/renderless-components-in-vuejs/</ListItem>
+            <ListItem margin="30px 0 0">Éviter de mettre tout et n'importe quoi dans l'arbre à états de VueX</ListItem>
+          </List>
         </Slide>
         <Slide transition={['fade']} bgColor="primary" textColor="secondary">
           <Heading size={3} textColor="tertiary" caps>
@@ -246,7 +256,7 @@ export default class Presentation extends React.Component {
             Et le turfu ?
           </Heading>
           <List>
-            <ListItem margin="60px 0 0">Vue.js 3 courant 2019</ListItem>
+            <ListItem margin="60px 0 0">Vue.js 3 au 3ème trimestre 2019</ListItem>
             <ListItem margin="30px 0 0">Contribuez ! https://github.com/vuejs</ListItem>
             <ListItem margin="30px 0 0">Meetups et conférences (events.vuejs.org)</ListItem>
           </List>
