@@ -20,7 +20,7 @@ Les supports peuvent être librement modifiés et réutilisés. Les slides ont �
 - Lancer l'application avec `npm run serve` à la racine de `demo` (mieux car prend en compte les briques telles que BootstrapVue)
 - Montrer l'intérêt de Vue Devtools en tant qu'extension au navigateur
 - Montrer l'interface graphique de Vue CLI qui permet d'administrer ses applications : `vue ui`
-- Installer [BootstrapVue](https://bootstrap-vue.js.org/docs/#vue-cli-3) avec `npm install --save bootstrap-vue` et ajouter un `<b-button>` par exemple
+- Installer [BootstrapVue](https://bootstrap-vue.js.org/docs/#vue-cli-3) avec `npm install --save bootstrap-vue`, ajouter les imports `import Vue from 'vue'` et `import BootstrapVue from 'bootstrap-vue'`, indiquer à Vue d'utiliser BootstrapVue avec `Vue.use(BootstrapVue)` et ajouter un `<b-button>` par exemple
 - Tester les conditions en ajoutant `<p v-if='seen'>Tu me vois</p>` dans le template et une data `seen`
 - Vérifier que cela ne fonctionne pas et expliquer pourquoi (sécurité Vue.js du fait que les composants n'ont pas leur propre état de base), ajouter la data en tant que function
 - Montrer que les erreurs apparaissent dans le terminal
