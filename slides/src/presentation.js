@@ -83,12 +83,16 @@ export default class Presentation extends React.Component {
           </Heading>
           <List>
             <ListItem margin="60px 0 0">Un framework front JS (ES2015/2016)</ListItem>
-            <ListItem margin="30px 0 0">Concurrent à Angular et React</ListItem>
-            <ListItem margin="30px 0 0">Sans lien avec un GAFAM</ListItem>
             <ListItem margin="30px 0 0">Créé par Evan You en 2014</ListItem>
             <ListItem margin="30px 0 0">Open-source, licence MIT</ListItem>
-            <ListItem margin="30px 0 0">Version actuelle : 2.6</ListItem>
+            <ListItem margin="30px 0 0">Concurrent à Angular et React</ListItem>
+            <ListItem margin="30px 0 0">Sans lien avec un GAFAM</ListItem>
+            <ListItem margin="30px 0 0">Version actuelle : 2.6.10</ListItem>
           </List>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="secondary">
+          <Image margin="-150px 50px 0" width="900px" src={images.comparaison}></Image>
+          <Text size={6} margin="30px 0 0">Source (17 décembre 2018) : https://dzone.com/articles/infographic-react-vs-angular-vs-vuejs</Text>
         </Slide>
         <Slide transition={['fade']} bgColor="primary" textColor="secondary">
           <Heading size={3} textColor="tertiary" caps>
@@ -101,22 +105,6 @@ export default class Presentation extends React.Component {
             <ListItem margin="30px 0 0">Vue Router, VueX (State)...</ListItem>
             <ListItem margin="30px 0 0">Apprentissage rapide et facile</ListItem>
             <ListItem margin="30px 0 0">Possibilité d'utiliser TypeScript</ListItem>
-          </List>
-        </Slide>
-        <Slide transition={['fade']} bgColor="primary" textColor="secondary">
-          <Image margin="-150px 50px 0" width="900px" src={images.comparaison}></Image>
-          <Text size={6} margin="30px 0 0">Source (17 décembre 2018) : https://dzone.com/articles/infographic-react-vs-angular-vs-vuejs</Text>
-        </Slide>
-        <Slide transition={['fade']} bgColor="primary" textColor="secondary">
-          <Heading size={3} textColor="tertiary" caps>
-            Installation
-          </Heading>
-          <List>
-            <ListItem margin="60px 0 0">En inclusion directe <Code>script</Code></ListItem>
-            <ListItem margin="30px 0 0">Avec <Code>npm install vue</Code> : Webpack...</ListItem>
-            <ListItem margin="30px 0 0">Avec Vue CLI (cli.vuejs.org) : <Code>npm install -g @vue/cli</Code></ListItem>
-            <ListItem margin="30px 0 0">Avec NuxtJS (nuxtjs.org) : comprend Vue Router, Babel, SSR...</ListItem>
-            <ListItem margin="30px 0 0">Avec le blueprint JHipster : <Code>npm install -g generator-jhipster-vuejs</Code> puis <Code>jhipster --blueprint vuejs</Code></ListItem>
           </List>
         </Slide>
         <Slide transition={['fade']} bgColor="primary" textColor="secondary">
@@ -152,7 +140,7 @@ export default class Presentation extends React.Component {
             <ListItem margin="30px 0 0">Méthodes (dont fonctions de rendu avec <Code>render</Code>)</ListItem>
             <ListItem margin="30px 0 0">Propriétés calculées avec <Code>computed</Code> (cache)</ListItem>
             <ListItem margin="30px 0 0">Observateurs avec <Code>watch</Code> (un par champ)</ListItem>
-            <ListItem margin="30px 0 0">Propriétés communiquer avec les composants enfants avec <Code>props</Code></ListItem>
+            <ListItem margin="30px 0 0">Propriétés pour communiquer avec les composants enfants avec <Code>props</Code></ListItem>
             <ListItem margin="30px 0 0">Interpolation dans les templates avec <Code>&#123;&#123; attribut &#125;&#125;</Code> (expressions JS OK)</ListItem>
           </List>
         </Slide>
@@ -242,6 +230,18 @@ export default class Presentation extends React.Component {
             <ListItem margin="30px 0 0">Extension pour les navigateurs</ListItem>
             <ListItem margin="30px 0 0">Voir les composants et leurs données</ListItem>
             <ListItem margin="30px 0 0">https://github.com/vuejs/vue-devtools</ListItem>
+          </List>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="secondary">
+          <Heading size={3} textColor="tertiary" caps>
+            Installation
+          </Heading>
+          <List>
+            <ListItem margin="60px 0 0">En inclusion directe <Code>script</Code></ListItem>
+            <ListItem margin="30px 0 0">Avec <Code>npm install vue</Code> : Webpack...</ListItem>
+            <ListItem margin="30px 0 0">Avec Vue CLI (cli.vuejs.org) : <Code>npm install -g @vue/cli</Code></ListItem>
+            <ListItem margin="30px 0 0">Avec NuxtJS (nuxtjs.org) : comprend Vue Router, Babel, SSR...</ListItem>
+            <ListItem margin="30px 0 0">Avec le blueprint JHipster : <Code>npm install -g generator-jhipster-vuejs</Code> puis <Code>jhipster --blueprint vuejs</Code></ListItem>
           </List>
         </Slide>
         <Slide transition={['zoom']} bgColor="secondary" textColor="primary">
