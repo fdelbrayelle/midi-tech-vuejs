@@ -104,7 +104,7 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
         <Slide transition={['fade']} bgColor="primary" textColor="secondary">
-          <Image margin="-200px 0 0" src={images.comparaison}></Image>
+          <Image margin="-150px 50px 0" width="900px" src={images.comparaison}></Image>
           <Text size={6} margin="30px 0 0">Source (17 décembre 2018) : https://dzone.com/articles/infographic-react-vs-angular-vs-vuejs</Text>
         </Slide>
         <Slide transition={['fade']} bgColor="primary" textColor="secondary">
@@ -259,6 +259,8 @@ export default class Presentation extends React.Component {
             <ListItem margin="60px 0 0">Vue.js 3 au 3ème trimestre 2019</ListItem>
             <ListItem margin="30px 0 0">Contribuez ! https://github.com/vuejs</ListItem>
             <ListItem margin="30px 0 0">Meetups et conférences (events.vuejs.org)</ListItem>
+            <ListItem margin="30px 0 0">Autres solutions comme Svelte...</ListItem>
+            <ListItem margin="30px 0 0">Le Web, ses frameworks et ses standards : https://youtu.be/uFxVH5mFAKg (@hsablonniere)</ListItem>
           </List>
         </Slide>
         <Slide transition={['fade']} bgColor="primary" textColor="secondary">
@@ -267,11 +269,11 @@ export default class Presentation extends React.Component {
           </Heading>
           <List>
             <ListItem margin="60px 0 0">CodeSandBox : https://codesandbox.io/s/vue</ListItem>
-            <ListItem margin="30px 0 0">Vue.js 2 : https://fr.vuejs.org/v2/guide</ListItem>
-            <ListItem margin="30px 0 0">NuxtJS : https://nuxtjs.org/guide</ListItem>
+            <ListItem margin="30px 0 0">Vue.js 2.* : https://fr.vuejs.org/v2/guide</ListItem>
             <ListItem margin="30px 0 0">Vue Router : https://router.vuejs.org/guide</ListItem>
             <ListItem margin="30px 0 0">VueX : https://vuex.vuejs.org/guide</ListItem>
             <ListItem margin="30px 0 0">SSR : https://ssr.vuejs.org</ListItem>
+            <ListItem margin="30px 0 0">NuxtJS : https://nuxtjs.org/guide</ListItem>
           </List>
         </Slide>
         <Slide transition={['zoom']} bgColor="secondary" textColor="primary">
